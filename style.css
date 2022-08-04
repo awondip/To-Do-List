@@ -1,0 +1,125 @@
+body {
+    --list-background: rgb(226, 77, 77);
+    --list-heading : white;
+    --list-Value-backgroundColor :#fff;
+    --creatButtonColor : rgb(63, 63, 224);
+    background-color: var(--list-background);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.container-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+
+}
+
+#headingList {
+    color: var(--list-heading);
+}
+.input-field {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    border: 1px solid;
+    padding: 0.5rem  1.5rem ;
+    padding-left: -600px;
+    background-color: var(--list-heading);
+    border: none;
+}
+
+.to-do-list {
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--list-Value-backgroundColor);
+    margin-top: 1rem;
+    width: 24%;
+}
+
+
+.input-field > input {
+    width: 100%;
+    border: none;
+    padding: 5px 8px;
+}
+
+.task-table {
+    float: left;
+    color: var(--list-background);
+    /* padding: 1.2rem 0; */
+   
+}
+
+
+
+#addTask {
+    border: none;
+    background: none;
+    padding-left: 2rem;
+    color: var(--creatButtonColor);
+    font-family: 'Roboto', sans-serif;
+
+}
+#clearTask {
+    border: none;
+    float: left;
+    background: none;
+    padding: 10px;
+    margin-left: 16rem;
+    color: var(--list-background);
+}
+
+
+@media (max-width:500px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #headingList {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 18px;
+        margin-left: 3rem;
+        color: var(--list-heading);
+    }
+    .input-field {
+        display: flex;
+        min-width: 100%;
+        width: 100vh;
+        flex-direction: column;
+        border: 1px solid;
+        padding: 0.5rem  1.5rem ;
+        background-color: var(--list-heading);
+        border: none;
+    }
+    .input-field > input {
+        padding: 1rem 
+    }
+    #addTask {
+        border: none;
+        background: none;
+        font-size: 1rem;
+        padding-left: 2rem;
+        color: var(--creatButtonColor);
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .to-do-list {
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--list-Value-backgroundColor);
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    
+}
+
+
+
